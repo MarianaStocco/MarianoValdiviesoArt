@@ -1,9 +1,9 @@
 const { Router } = require("express");
 const router = Router();
 const User = require("../../models/user");
-const passport = require("../../../config/passport.js");
-const sendVerification = require("../../../config/nodemailer");
-const sendContact = require("../../../config/nodemailer2");
+const passport = require("../../config/passport.js");
+const sendVerification = require("../../config/nodemailer");
+const sendContact = require("../../config/nodemailer2");
 
 
 router.get('/', async (req, res) => {

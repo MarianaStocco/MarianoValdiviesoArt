@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 require('dotenv').config();
-require('../config/mongoose.js')
-var app = require('../src/app');
+require('./config/mongoose.js')
+var app = require('./app.js');
 var debug = require('debug')('api:server');
 var http = require('http');
 
@@ -53,3 +53,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+

@@ -3,7 +3,7 @@ const jwtStrategy = require("passport-jwt").Strategy;
 const extractJwt = require("passport-jwt").ExtractJwt;
 const { SECRET_KEY } = process.env;
 
-const User = require("../src/models/user");
+const User = require("../models/user");
 
 passport.use(
     new jwtStrategy(

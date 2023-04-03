@@ -2,7 +2,6 @@ const { Router } = require("express");
 const router = Router();
 const axios = require("axios");
 const Product = require("../../models/product");
-const mockData = require("./data.json")
 const ObjectId = require('mongodb').ObjectId;
 
 router.get("/getOnePaint/:id", async (req, res) => {

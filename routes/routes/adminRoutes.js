@@ -1,10 +1,10 @@
-const passport = require("../../../config/passport.js");
+const passport = require("../../config/passport.js");
 const { Router } = require("express");
 const User = require("../../models/user.js");
 const Product = require("../../models/product.js");
 const Request = require("../../models/request.js");
 const ProductArtist = require("../../models/productArtist.js");
-const sendVerification = require("../../../config/nodemailer.js");
+const sendVerification = require("../../config/nodemailer.js");
 const Transaction = require("../../models/Transaction");
 
 const router = Router();

@@ -1,7 +1,7 @@
 const Product = require("../../models/product");
 const Router = require("express")
 const router = Router();
-const passport = require("../../../config/passport");
+const passport = require("../../config/passport");
 
 //Al momento de comentar debería poder comprobar la existencia del usuario y si el token de usuario es 
 //valido

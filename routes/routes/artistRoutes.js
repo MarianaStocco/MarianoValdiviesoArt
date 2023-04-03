@@ -1,4 +1,4 @@
-const passport = require("../../../config/passport.js");
+const passport = require("../../config/passport.js");
 const { Router } = require("express");
 const User = require("../../models/user.js");
 const ProductArtist = require("../../models/productArtist.js");

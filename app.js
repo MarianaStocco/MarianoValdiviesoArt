@@ -1,10 +1,11 @@
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
-const router = require("./routes/routes.js");
+const router = require("./routes/index.js");
+const paymentRoutes = require("./routes/payment.routes")
 const app = express();
 const passport = require("passport")
-const paymentRoutes = require("./routes/payment.routes")
+
 
 
 //MIDDLEWARES
@@ -13,6 +14,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(passport.initialize());
 app.use(paymentRoutes);
+
 
 
 //INDEX
